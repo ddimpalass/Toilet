@@ -20,6 +20,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KM7-x9-lio">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xa9-5r-pA2" id="UyB-Uv-kgG"/>
+                                </connections>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyu-YQ-Kix">
                                 <rect key="frame" x="342" y="374" width="56" height="148"/>
@@ -156,6 +159,10 @@
                             </connections>
                         </tableViewCell>
                     </prototypes>
+                    <connections>
+                        <outlet property="dataSource" destination="xa9-5r-pA2" id="WUd-lw-3Ic"/>
+                        <outlet property="delegate" destination="xa9-5r-pA2" id="pg9-RT-32c"/>
+                    </connections>
                 </tableView>
             </objects>
             <point key="canvasLocation" x="1346.376811594203" y="742.63392857142856"/>
